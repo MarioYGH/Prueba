@@ -1,0 +1,28 @@
+/*
+Author:Mario Yahir García Hernández
+email:marioygh15@gmail.com
+September 12, 2022
+*/
+
+#include <iostream>
+#include <cstdlib>
+#include <array>
+
+using namespace std;
+
+int main() {
+    array<array<int, 10>,10>A={};
+    int traza=0;
+
+    //inicializar matriz con números aleatorios
+    for(int i=0; A.size(); i++){
+        for(int j=0; A.size(); j++){
+          A[i][j]=(rand()%100) +1;
+
+            cout<<"A es igual:"<<A[i][j]<<endl;
+          //TODO:
+          //validación si i y j son iguales
+        }
+    }
+    return 0;
+}
