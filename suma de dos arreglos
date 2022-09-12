@@ -1,0 +1,47 @@
+/*
+Author:Mario Yahir García Hernández
+email:marioygh15@gmail.com
+September 12, 2022
+*/
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <array>
+
+using namespace std;
+
+int main() {
+    srand ((int)time(0));
+
+    int min=99999;
+    int max=-99999;
+    array<int, 1000> A{};
+    array<int, 1000> B{};
+    array<int, 1000> C{};
+
+    for(int i=0; i<1000; i++){
+        A[i] = (rand() % 100) +1;
+        B[i] = (rand() % 100) +1;
+
+        C[i] = A[i]+B[i];
+
+        for(i=0;i<=C[i]; i++){
+
+        }
+        cout<<"La suma de "<<A[i]<<" + "<<B[i]<<" = "<<C[i]<<endl;
+
+    }
+
+/* srand ((int)time(0));
+    int i=0;
+    while(i++<10){
+        int r = (rand() % 100) + 1;
+        cout << r << " ";*/
+
+
+    return 0;
+}
+
+
+
